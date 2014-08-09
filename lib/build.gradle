@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
 group 'me.licious'
-version '0.6.25'
+version '0.6.26'
 
 android {
     compileSdkVersion 19

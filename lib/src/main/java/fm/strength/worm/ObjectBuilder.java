@@ -374,7 +374,7 @@ public class ObjectBuilder<T> {
                     field.setAccessible(true); // used later, when building
                     if(contracts.length == 0) {
                         if(fieldName.equals("id")) fieldName = Contract.Model.COLUMN_ID;
-                        columns[i] = cursor.getColumnIndex(fieldName);
+                        columns[i] = cursor.getColumnIndex(columnName(fieldName));
                     } else {
                         if(isSimple(fieldType) || isJSON(fieldType)) {
                             String column = null;
